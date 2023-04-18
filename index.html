@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="icons/css/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900
+&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<title>simple combinator attributes</title>
+</head>
+<body>
+	<!-- <section> -->
+		<!-- <h1 id="simple"><u>simple selectors</u></h1> -->
+			<!-- <p>Simple selectors (select elements based on name, id, class)</p> -->
+	<!-- </section> -->
+	<!-- <section> -->
+		<!-- <h1 class="combinator"><u>combinator selectors</u></h1> -->
+			<!-- <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p> -->
+	<!-- </section> -->
+		<!-- <h2 class="typ-combinator"><u>types of combinator selector</u></h2> -->
+	<!-- <section class="star"> -->
+			<!-- <p>descendant selector (space)<br> -->
+			<!-- child selector (>)<br> -->
+			<!-- adjacent sibling selector (+)<br> -->
+			<!-- general sibling selector (~)</P> -->
+	<!-- </section> -->
+		<!-- <h2><u>Wikipedia</u></h2> -->
+		<!-- <div> -->
+				<!-- <p>Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.</p> -->
+				<!-- <p>Witold Lutosławski (25 January 1913 – 7 February 1994) was a ...</P> -->
+				<!-- <p>Simple English Wiki - Wikipedia:About - Basic English - Simple talk</p> -->
+		<!-- </div> -->
+				<!-- <p>This article is about the Republic of India. -->
+				<!-- </p> -->
+	<!-- <a href="https://en.wikipedia.org/wiki/India">wikipedia.com</a> -->
+	<!-- <a href="https://www.google.com/search?q=flipkart&rlz=1C1CHBF_enIN1041IN1041&oq=flip&aqs=chrome.0.69i59j69i57j69i59l2j0i271l2j69i61j69i60.4132j0j7&sourceid=chrome&ie=UTF-8">flipkart.com</a> -->
+	<!-- <a href="https://www.zomato.com/chennai">zomato.com</a> -->
+	<!-- <a href="http://www.fabevy.com/">fabevy.com</a> -->
+	
+	
+	
+	<!-- <h2>Descendant Selector</h2> -->
+
+		<!-- <p>The descendant selector matches all elements that are descendants of a specified element.</p> -->
+
+		<!-- <div> -->
+		  <!-- <p>Paragraph 1 in the div.</p> -->
+		  <!-- <p>Paragraph 2 in the div.</p> -->
+		  <!-- <section><p>Paragraph 3 in the div.</p></section> -->
+		<!-- </div> -->
+
+		<!-- <p>Paragraph 4. Not in a div.</p> -->
+		<!-- <p>Paragraph 5. Not in a div.</p> -->
+		
+<!-- <hr> -->
+
+	<!-- <h2>Child Selector</h2> -->
+
+		<!-- <p>The child selector (>) selects all elements that are the children of a specified element.</p> -->
+
+		<!-- <div> -->
+		  <!-- <p>Paragraph 1 in the div.</p> -->
+		  <!-- <p>Paragraph 2 in the div.</p> -->
+		  <!-- <section> -->
+			<!-- not Child but Descendant -->
+			<!-- <p>Paragraph 3 in the div (inside a section element).</p> -->
+		  <!-- </section> -->
+		  <!-- <p>Paragraph 4 in the div.</p> -->
+		<!-- </div> -->
+
+		<!-- <p>Paragraph 5. Not in a div.</p> -->
+		<!-- <p>Paragraph 6. Not in a div.</p> -->
+		
+<!-- <hr> -->
+
+	<!-- <h2>Adjacent Sibling Selector</h2> -->
+
+		<!-- <p>The + selector is used to select an element that is directly after another specific element.</p> -->
+		<!-- <p>The following example selects the first p element that are placed immediately after div elements:</p> -->
+
+		<!-- <div> -->
+		  <!-- <p>Paragraph 1 in the div.</p> -->
+		  <!-- <p>Paragraph 2 in the div.</p> -->
+		<!-- </div> -->
+
+		<!-- <p>Paragraph 3. After a div.</p> -->
+		<!-- <p>Paragraph 4. After a div.</p> -->
+
+		<!-- <div> -->
+		  <!-- <p>Paragraph 5 in the div.</p> -->
+		  <!-- <p>Paragraph 6 in the div.</p> -->
+		<!-- </div> -->
+
+		<!-- <p>Paragraph 7. After a div.</p> -->
+		<!-- <p>Paragraph 8. After a div.</p> -->
+
+
+<!-- <hr> -->
+
+	<!-- <h2>General Sibling Selector</h2> -->
+
+		<!-- <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p> -->
+
+		<!-- <p>Paragraph 1.</p> -->
+
+		<!-- <div> -->
+		  <!-- <p>Paragraph 2.</p> -->
+		<!-- </div> -->
+
+		<!-- <p>Paragraph 3.</p> -->
+		<!-- <code>Some code.</code> -->
+		<!-- <p>Paragraph 4.</p> -->
+
+
+<!-- <hr> -->
+
+
+</body>
+</html>
+
+	<!-- Selector	          Example	       Example description -->
+	<!-- element element	   div p	       Selects all <p> elements inside <div> elements -->
+	<!-- element>element	   div > p	       Selects all <p> elements where the parent is a <div> element -->
+	<!-- element+element	   div + p	       Selects the first <p> element that are placed immediately after <div> elements -->
+	<!-- element1~element2	   p ~ ul	       Selects every <ul> element that are preceded by a <p> element -->
